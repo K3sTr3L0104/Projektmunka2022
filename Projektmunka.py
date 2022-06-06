@@ -31,10 +31,9 @@ lottoszam5= random.randint(1,100)
 
 
 
-#Bekérni a felhasználó nevét, korát, születési évét (Nagy Enikő):
+#Bekérni a felhasználó nevét, korát (Nagy Enikő):
 nev=input("Add meg a nevedet:")
 kor=input("Add meg az életkorod:")
-szulev=input("Add meg a születési éved:")
 
 
 
