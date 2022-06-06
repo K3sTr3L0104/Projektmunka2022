@@ -16,7 +16,7 @@ lottoszam3= random.randint(1,100)
 lottoszam4= random.randint(1,100)
 lottoszam5= random.randint(1,100)
 #Alap pénzösszeg beállítása (Nagy Enikő):
-
+alapPenz=5000
 
 
 
