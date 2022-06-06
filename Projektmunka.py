@@ -1,3 +1,4 @@
+import random
 #Projektmunka
 #Reszese: Nagy Eniko es Karakas Oliver Roland
 #Feladat: LOTTÓ
@@ -13,11 +14,11 @@ sor1=file.readline().strip()
 
 
 #Lottó számok generálása: (Karakas Roland):
-
-
-
-
-
+lottoszam1= random.randint(1,100)
+lottoszam2= random.randint(1,100)
+lottoszam3= random.randint(1,100)
+lottoszam4= random.randint(1,100)
+lottoszam5= random.randint(1,100)
 #Alap pénzösszeg beállítása (Nagy Enikő):
 
 
