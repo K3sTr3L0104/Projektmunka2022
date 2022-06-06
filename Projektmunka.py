@@ -2,14 +2,12 @@
 #Reszese: Nagy Eniko es Karakas Oliver Roland
 #Feladat: LOTTÓ
 #Fájl megnyitás olvasásra (Nagy Enikő):
+
 file=open("uj szöveges dokumentum.txt" "r")
-
-
 
 #Első sor kiíratása (Nagy Enikő):
 
 file.readline()
-
 
 #Lottó számok generálása: (Karakas Roland):
 
