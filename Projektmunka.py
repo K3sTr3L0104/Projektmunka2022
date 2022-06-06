@@ -42,6 +42,10 @@ kor=input("Add meg az életkorod:")
 
 
 #Ha nem elég idős, akkor ne engedje lottózni (Nagy Enikő):
+if kor<18:
+   print("nem lottózhat")
+else:
+   print("lottózhat")
 
 
 
