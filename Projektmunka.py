@@ -4,14 +4,10 @@ import random
 #Feladat: LOTTÓ
 #Fájl megnyitás olvasásra (Nagy Enikő):
 
-file=open("uj szöveges dokumentum.txt" "r")
+file=open("lottoszamok.txt" "r")
 
 #Első sor kiíratása (Nagy Enikő):
-for sor in file:
-    print(sor)
-file.seek(0,0)
-sor1=file.readline().strip()
-
+file.readline()
 
 #Lottó számok generálása: (Karakas Roland):
 lottoszam1= random.randint(1,100)
