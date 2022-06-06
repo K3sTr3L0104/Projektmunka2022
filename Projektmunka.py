@@ -6,8 +6,14 @@
 file=open("uj szöveges dokumentum.txt" "r")
 
 #Első sor kiíratása (Nagy Enikő):
+for sor in file:
+    print(sor)
+file.seek(0,0)
 
-file.readline()
+sor1=file.readline().strip()
+list.append(sor1)
+print(list)
+
 
 #Lottó számok generálása: (Karakas Roland):
 
