@@ -14,11 +14,12 @@ lottoszam2= random.randint(1,100)
 lottoszam3= random.randint(1,100)
 lottoszam4= random.randint(1,100)
 lottoszam5= random.randint(1,100)
-print(lottoszam1)
-print(lottoszam2)
-print(lottoszam3)
-print(lottoszam4)
-print(lottoszam5)
+#Ellenőrző kiíratások
+#print(lottoszam1)
+#print(lottoszam2)
+#print(lottoszam3)
+#print(lottoszam4)
+#print(lottoszam5)
 #Alap pénzösszeg beállítása (Nagy Enikő, Karakas Roland):
 alapPenz=5000
 print("A pénztárcádban ennyi pénz található:", alapPenz)
@@ -98,3 +99,4 @@ if talalatok == 5:
    file1.write(str(otTalalat))
 
 #Az új fájból kiíratni a versenyző nevét, és a helyes találatokat (Karakas Roland, Nagy Enikő):
+file2 = open("talalatok.txt" ,"r", encoding="utf_8")
