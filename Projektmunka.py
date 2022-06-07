@@ -102,7 +102,14 @@ if bekert_szam5 == lottoszam1 or bekert_szam5 == lottoszam2 or bekert_szam5 == l
 print("Neked összesen", talalatok,"találatod van!")
 #Feltételek,ciklusok létrehozása (Nagy Eniko, Karakas Roland):
 
-
+if talalatok == 2:
+   alapPenz=alapPenz+15000
+if talalatok == 3:
+   alapPenz=alapPenz+50000
+if talalatok == 4:
+   alapPenz=alapPenz+500000
+if talalatok == 5:
+   alapPenz=alapPenz+15000000
 
 
 
