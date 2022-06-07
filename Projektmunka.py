@@ -14,6 +14,11 @@ lottoszam2= random.randint(1,100)
 lottoszam3= random.randint(1,100)
 lottoszam4= random.randint(1,100)
 lottoszam5= random.randint(1,100)
+print(lottoszam1)
+print(lottoszam2)
+print(lottoszam3)
+print(lottoszam4)
+print(lottoszam5)
 #Alap pénzösszeg beállítása (Nagy Enikő):
 
 alapPenz=5000
@@ -108,9 +113,12 @@ print("Neked összesen", talalatok,"találatod van!")
 
 
 
-#Új fájlba íratni a versenyző nevét, és hogy hány számot talált el (Karakas Roland):
+#Új fájlba íratni a versenyző nevét, korát, és hogy hány számot talált el, illetve hogy mennyit nyert (Karakas Roland):
 file1 = open("talalatok.txt", "w", encoding="utf_8")
-file1.write(nev,kor,lista.strip(","))
+file1.write(nev)
+file1.write(str(kor))
+file1.write(str(talalatok))
+file1.write(mennyitNyert)
 
 
 
