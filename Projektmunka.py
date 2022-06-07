@@ -19,63 +19,40 @@ print(lottoszam2)
 print(lottoszam3)
 print(lottoszam4)
 print(lottoszam5)
-#Alap pénzösszeg beállítása (Nagy Enikő):
-
+#Alap pénzösszeg beállítása (Nagy Enikő, Karakas Roland):
 alapPenz=5000
-
+print("A pénztárcádban ennyi pénz található:", alapPenz)
 #lottónyeremények kiírása(Nagy Enikő):
+ketTalalat = 15000
+haromTalalat = 50000
+negyTalalat = 500000
+otTalalat = 15000000
 print("2 találatos nyeremény összege:15.000Ft")
 print("3 találatos nyeremény összege:50.000Ft")
-print("4 találatos nyeremény összege:50.0000Ft")
+print("4 találatos nyeremény összege:500.000Ft")
 print("5 találatos nyeremény összege:15.000.000Ft")
-
 #Lottószelvény választása, illetve annak az ára levonása (Karakas Roland):
-
 OtosLotto = 500
 print("Ötös lottó ára: 500 Ft")
 hanyatKersz = int(input("Hány ötös lottó jegyet szeretnél venni:"))
 for i in range(hanyatKersz):
     alapPenz = alapPenz-OtosLotto
 print("A lottószelvény vásárlása után ennyi pénzed maradt:", alapPenz,"Ft")
-
-
 #Bekérni a felhasználó nevét, korát (Nagy Enikő):
-
 nev=input("Add meg a nevedet:")
 kor=int(input("Add meg az életkorod:"))
-
-
-
-
-
-
-
 #Ha nem elég idős, akkor ne engedje lottózni (Nagy Enikő):
 if kor<18:
    print("nem lottózhat")
+   exit()
 else:
    print("lottózhat")
-
-
-
-
-
-
 #Bekérni a felhasználótól 5 számot (Nagy Enikő):
-
 bekert_szam1=int(input("Adj meg egy számot:"))
 bekert_szam2=int(input("Adj meg egy számot:"))
 bekert_szam3=int(input("Adj meg egy számot:"))
 bekert_szam4=int(input("Adj meg egy számot:"))
 bekert_szam5=int(input("Adj meg egy számot:"))
-
-
-
-
-
-
-
-
 #Megnézni, hogy hány találata van (Karakas Roland, Nagy Enikő):
 lista = []
 talalatok = 0
@@ -100,36 +77,24 @@ if bekert_szam5 == lottoszam1 or bekert_szam5 == lottoszam2 or bekert_szam5 == l
    lista.append(bekert_szam5)
 
 print("Neked összesen", talalatok,"találatod van!")
-#Feltételek,ciklusok létrehozása (Nagy Eniko, Karakas Roland):
-
-if talalatok == 2:
-  alapPenz=alapPenz+15000
-if talalatok == 3:
-   alapPenz=alapPenz+50000
-if talalatok == 4:
-   alapPenz=alapPenz+500000
-if talalatok == 5:
-   alapPenz=alapPenz+15000000
-
-
-
-
-
-
-
-
-
-
-
-
-
 #Új fájlba íratni a versenyző nevét, korát, és hogy hány számot talált el, illetve hogy mennyit nyert (Karakas Roland):
 file1 = open("talalatok.txt", "w", encoding="utf_8")
 file1.write(nev)
 file1.write(str(kor))
 file1.write(str(talalatok))
-file1.write(mennyitNyert)
+#Feltételek,ciklusok létrehozása (Nagy Eniko, Karakas Roland):
 
-
+if talalatok == 2:
+   alapPenz=alapPenz+15000
+   file1.write(ketTalalat)
+if talalatok == 3:
+   alapPenz=alapPenz+50000
+   file1.write(str(haromTalalat))
+if talalatok == 4:
+   alapPenz=alapPenz+500000
+   file1.write(str(negyTalalat))
+if talalatok == 5:
+   alapPenz=alapPenz+15000000
+   file1.write(str(otTalalat))
 
 #Az új fájból kiíratni a versenyző nevét, és a helyes találatokat (Karakas Roland, Nagy Enikő):
