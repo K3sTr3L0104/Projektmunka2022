@@ -24,10 +24,10 @@ print(lottoszam5)
 alapPenz=5000
 
 #lottónyeremények kiírása(Nagy Enikő):
-print("2 találatos nyeremény összege:15000Ft")
-print("3 találatos nyeremény összege:50000Ft")
-print("4 találatos nyeremény összege:500000Ft")
-print("5 találatos nyeremény összege:15000000")
+print("2 találatos nyeremény összege:15.000Ft")
+print("3 találatos nyeremény összege:50.000Ft")
+print("4 találatos nyeremény összege:50.0000Ft")
+print("5 találatos nyeremény összege:15.000000Ft")
 
 #Lottószelvény választása, illetve annak az ára levonása (Karakas Roland):
 
