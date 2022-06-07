@@ -82,7 +82,6 @@ for i in range(5):
 
 
 
-
 #Feltételek,ciklusok létrehozása (Nagy Eniko, Karakas Roland):
 
 
