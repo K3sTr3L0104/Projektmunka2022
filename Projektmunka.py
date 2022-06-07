@@ -62,7 +62,10 @@ else:
 
 #Bekérni a felhasználótól 5 számot (Nagy Enikő):
 
-
+lista = []
+for i in range(5):
+    szam=input("Adjon meg egy lottószámot:")
+    lista.append(szam)
 
 
 
