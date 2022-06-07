@@ -8,23 +8,14 @@ file=open("lottoszamok.txt" "r")
 
 #Első sor kiíratása (Nagy Enikő):
 file.readline()
-
 #Ötös Lottó számok generálása: (Karakas Roland):
 lottoszam1= random.randint(1,100)
 lottoszam2= random.randint(1,100)
 lottoszam3= random.randint(1,100)
 lottoszam4= random.randint(1,100)
 lottoszam5= random.randint(1,100)
-#Eurojackpot lottó számok generálása: (Karakas Roland):
-
-
-
-
-
-
-
 #Alap pénzösszeg beállítása (Nagy Enikő):
-alapPenz=5000
+
 
 
 
@@ -75,6 +66,7 @@ for i in range(5):
 
 
 #Megnézni, hogy hány találata van (Karakas Roland, Nagy Enikő):
+
 
 
 
