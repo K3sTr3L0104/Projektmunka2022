@@ -4,7 +4,7 @@ import random
 #Feladat: LOTTÓ
 #Fájl megnyitás olvasásra (Nagy Enikő):
 
-file=open("lottoszamok.txt" "r")
+file=open("lottoszamok.txt","r")
 
 #Első sor kiíratása (Nagy Enikő):
 print(file.readline())
