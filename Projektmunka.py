@@ -103,7 +103,7 @@ print("Neked összesen", talalatok,"találatod van!")
 #Feltételek,ciklusok létrehozása (Nagy Eniko, Karakas Roland):
 
 if talalatok == 2:
-   alapPenz=alapPenz+15000
+  alapPenz=alapPenz+15000
 if talalatok == 3:
    alapPenz=alapPenz+50000
 if talalatok == 4:
