@@ -55,10 +55,11 @@ else:
 
 #Bekérni a felhasználótól 5 számot (Nagy Enikő):
 
-lista = []
-for i in range(5):
-    szam=input("Adjon meg egy lottószámot:")
-    lista.append(szam)
+bekert_szam1=int(input("Adj meg egy számot:"))
+bekert_szam2=int(input("Adj meg egy számot:"))
+bekert_szam3=int(input("Adj meg egy számot:"))
+bekert_szam4=int(input("Adj meg egy számot:"))
+bekert_szam5=int(input("Adj meg egy számot:"))
 
 
 
