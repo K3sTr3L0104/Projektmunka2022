@@ -69,14 +69,23 @@ bekert_szam5=int(input("Adj meg egy számot:"))
 
 
 #Megnézni, hogy hány találata van (Karakas Roland, Nagy Enikő):
+talalatok = 0
+if bekert_szam1 == lottoszam1 or bekert_szam1 == lottoszam2 or bekert_szam1 == lottoszam3 or bekert_szam1 == lottoszam4 or bekert_szam1 == lottoszam5:
+    talalatok = talalatok + 1
 
+if bekert_szam2 == lottoszam1 or bekert_szam2 == lottoszam2 or bekert_szam2 == lottoszam3 or bekert_szam2 == lottoszam4 or bekert_szam2 == lottoszam5:
+    talalatok = talalatok + 1
 
+if bekert_szam3 == lottoszam1 or bekert_szam3 == lottoszam2 or bekert_szam3 == lottoszam3 or bekert_szam3 == lottoszam4 or bekert_szam3 == lottoszam5:
+    talalatok = talalatok + 1
 
+if bekert_szam4 == lottoszam1 or bekert_szam4 == lottoszam2 or bekert_szam4 == lottoszam3 or bekert_szam4 == lottoszam4 or bekert_szam4 == lottoszam5:
+    talalatok = talalatok + 1
 
+if bekert_szam5 == lottoszam1 or bekert_szam5 == lottoszam2 or bekert_szam5 == lottoszam3 or bekert_szam5 ==  lottoszam4 or bekert_szam5 == lottoszam5:
+    talalatok = talalatok + 1
 
-
-
-
+print("Neked összesen", talalatok,"találatod van!")
 #Feltételek,ciklusok létrehozása (Nagy Eniko, Karakas Roland):
 
 
