@@ -23,7 +23,7 @@ print(lottoszam5)
 
 alapPenz=5000
 
-
+#lottónyeremények kiírása(Nagy Enikő):
 
 
 #Lottószelvény választása, illetve annak az ára levonása (Karakas Roland):
