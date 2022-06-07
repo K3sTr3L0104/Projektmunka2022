@@ -69,21 +69,27 @@ bekert_szam5=int(input("Adj meg egy számot:"))
 
 
 #Megnézni, hogy hány találata van (Karakas Roland, Nagy Enikő):
+lista = []
 talalatok = 0
 if bekert_szam1 == lottoszam1 or bekert_szam1 == lottoszam2 or bekert_szam1 == lottoszam3 or bekert_szam1 == lottoszam4 or bekert_szam1 == lottoszam5:
-    talalatok = talalatok + 1
+   talalatok = talalatok + 1
+   lista.append(bekert_szam1)
 
 if bekert_szam2 == lottoszam1 or bekert_szam2 == lottoszam2 or bekert_szam2 == lottoszam3 or bekert_szam2 == lottoszam4 or bekert_szam2 == lottoszam5:
-    talalatok = talalatok + 1
+   talalatok = talalatok + 1
+   lista.append(bekert_szam2)
 
 if bekert_szam3 == lottoszam1 or bekert_szam3 == lottoszam2 or bekert_szam3 == lottoszam3 or bekert_szam3 == lottoszam4 or bekert_szam3 == lottoszam5:
-    talalatok = talalatok + 1
+   talalatok = talalatok + 1
+   lista.append(bekert_szam3)
 
 if bekert_szam4 == lottoszam1 or bekert_szam4 == lottoszam2 or bekert_szam4 == lottoszam3 or bekert_szam4 == lottoszam4 or bekert_szam4 == lottoszam5:
-    talalatok = talalatok + 1
+   talalatok = talalatok + 1
+   lista.append(bekert_szam4)
 
 if bekert_szam5 == lottoszam1 or bekert_szam5 == lottoszam2 or bekert_szam5 == lottoszam3 or bekert_szam5 ==  lottoszam4 or bekert_szam5 == lottoszam5:
-    talalatok = talalatok + 1
+   talalatok = talalatok + 1
+   lista.append(bekert_szam5)
 
 print("Neked összesen", talalatok,"találatod van!")
 #Feltételek,ciklusok létrehozása (Nagy Eniko, Karakas Roland):
@@ -103,9 +109,9 @@ print("Neked összesen", talalatok,"találatod van!")
 
 
 #Új fájlba íratni a versenyző nevét, és hogy hány számot talált el (Karakas Roland):
+file1 = open("talalatok.txt", "w", encoding="utf_8")
+file1.write(nev,kor,lista.strip(","))
 
 
 
-
-
-#Az új fájból kiíratni a versenyző nevét, és a helyes találatokat, és hogy melyik lottószelvényt választotta (Karakas Roland, Nagy Enikő):
+#Az új fájból kiíratni a versenyző nevét, és a helyes találatokat (Karakas Roland, Nagy Enikő):
