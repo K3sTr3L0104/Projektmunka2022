@@ -7,7 +7,7 @@ import random
 file=open("lottoszamok.txt" "r")
 
 #Első sor kiíratása (Nagy Enikő):
-file.readline()
+print(file.readline())
 #Ötös Lottó számok generálása: (Karakas Roland):
 lottoszam1= random.randint(1,100)
 lottoszam2= random.randint(1,100)
@@ -22,15 +22,19 @@ alapPenz=5000
 
 
 #Lottószelvény választása, illetve annak az ára levonása (Karakas Roland):
+
 OtosLotto = 500
 print("Ötös lottó ára: 500 Ft")
 hanyatKersz = int(input("Hány ötös lottó jegyet szeretnél venni:"))
 for i in range(hanyatKersz):
     alapPenz = alapPenz-OtosLotto
 print("A lottószelvény vásárlása után ennyi pénzed maradt:", alapPenz,"Ft")
+
+
 #Bekérni a felhasználó nevét, korát (Nagy Enikő):
+
 nev=input("Add meg a nevedet:")
-kor=input("Add meg az életkorod:")
+kor=int(input("Add meg az életkorod:"))
 
 
 
