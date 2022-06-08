@@ -87,16 +87,20 @@ file1.write(str(talalatok))
 
 if talalatok == 2:
    alapPenz=alapPenz+15000
-   file1.write(ketTalalat)
+   file1.write(str(ketTalalat))
+    print("Gratulálunk! A nyereményeddel együtt", alapPenz,"összeg van a pénztárcádban!")
 if talalatok == 3:
    alapPenz=alapPenz+50000
    file1.write(str(haromTalalat))
+    print("Gratulálunk! A nyereményeddel együtt", alapPenz,"összeg van a pénztárcádban!")
 if talalatok == 4:
    alapPenz=alapPenz+500000
    file1.write(str(negyTalalat))
+    print("Gratulálunk! A nyereményeddel együtt", alapPenz,"összeg van a pénztárcádban!")
 if talalatok == 5:
    alapPenz=alapPenz+15000000
    file1.write(str(otTalalat))
+    print("Gratulálunk! A nyereményeddel együtt", alapPenz,"összeg van a pénztárcádban!")
 
 #Az új fájból kiíratni a versenyző nevét, és a helyes találatokat (Karakas Roland, Nagy Enikő):
 file2 = open("talalatok.txt" ,"r", encoding="utf_8")
