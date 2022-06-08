@@ -100,3 +100,5 @@ if talalatok == 5:
 
 #Az új fájból kiíratni a versenyző nevét, és a helyes találatokat (Karakas Roland, Nagy Enikő):
 file2 = open("talalatok.txt" ,"r", encoding="utf_8")
+for i in file2:
+   print(file2.readline())
